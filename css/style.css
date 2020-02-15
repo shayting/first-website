@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* border:1px solid black; coding時讓自己清楚邊界 */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #29323b;
+}
+
+
+/* 主色(primary) #29323b */
+
+
+/* 強調色(accent) #E2C0B9 */
+
+
+/* 字體顏色 #333 */
+
+/* general */
+.cv {
+    width: 700px;
+    margin: 100px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .5);
+    /** margin設定上下留白 100px 水平置中**/
+    z-index: 5;
+    position: relative;
+
+}
+
+html {
+    position: relative;
+
+}
+
+.decoration-box {
+    height: 400px;
+    width: 100%;
+    background: #E2C0B9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.cv-header,
+.cv-body,
+.cv-footer {
+    padding: 30px 50px;
+}
+
+.cv-footer {
+    padding: 80px 50px;
+}
+
+/* cv-header */
+.cv-header {
+    background: #ccc;
+}
+
+.name {
+    font-size: 50px;
+    text-transform: capitalize
+}
+
+/* cv-body */
+.experience {
+    position: relative;
+    padding-top: 30px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.experience:last-child {
+    border-bottom: none
+}
+
+.cv-body {
+    background: #fff;
+}
+
+.logo {
+    height: 80px;
+    right: 0;
+    top: 0;
+    position: absolute
+}
+
+/* cv-footer */
+.cv-footer {
+    background: #29323b;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: rgba(0, 0, 0, .5);
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: rgba(0, 0, 0, .3)
+}
+
+.social-link > i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: aliceblue
+}
